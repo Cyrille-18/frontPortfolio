@@ -1,7 +1,6 @@
 import {
   ApplicationConfig,
   provideZoneChangeDetection,
-  importProvidersFrom,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideTaiga } from '@taiga-ui/core';
