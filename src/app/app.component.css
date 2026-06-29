@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  transition: background 0.3s ease;
+}
+
+.app-shell {
+  min-height: calc(100vh - 5rem);
+}
