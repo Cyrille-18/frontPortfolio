@@ -1,36 +1,46 @@
 :root {
-  --bg-gradient: radial-gradient(circle at top left, rgba(139, 92, 246, 0.2), transparent 28%),
-                 radial-gradient(circle at top right, rgba(34, 211, 238, 0.16), transparent 24%),
-                 linear-gradient(180deg, #030712 0%, #0f172a 100%);
+  --bg-gradient: linear-gradient(180deg, #060b14 0%, #0b1320 45%, #101a29 100%);
   --text-primary: #f8fafc;
-  --text-secondary: rgba(226, 232, 240, 0.7);
-  --navbar-bg: rgba(10, 10, 12, 0.55);
+  --text-secondary: rgba(226, 232, 240, 0.74);
+  --page-surface: rgba(7, 17, 31, 0.44);
+  --hero-surface: transparent;
+  --hero-border: rgba(255, 255, 255, 0.1);
+  --hero-text: var(--text-primary);
+  --hero-text-muted: var(--text-secondary);
+  --hero-accent-start: #7dd3fc;
+  --hero-accent-end: #60a5fa;
+  --navbar-bg: transparent;
   --navbar-border: rgba(255, 255, 255, 0.08);
-  --navbar-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.45);
-  --nav-link-color: rgba(226, 232, 240, 0.85);
+  --navbar-shadow: 0 12px 34px -12px rgba(0, 0, 0, 0.54);
+  --nav-link-color: rgba(226, 232, 240, 0.9);
   --nav-link-hover-bg: rgba(255, 255, 255, 0.08);
-  --dropdown-bg: rgba(15, 23, 42, 0.95);
+  --dropdown-bg: rgba(10, 18, 34, 0.96);
   --dropdown-border: rgba(255, 255, 255, 0.08);
-  --dropdown-text: rgba(255, 255, 255, 0.8);
+  --dropdown-text: rgba(255, 255, 255, 0.84);
   --dropdown-button-hover: rgba(255, 255, 255, 0.1);
 }
 
 body.light-theme,
 html.light-theme {
-  --bg-gradient: radial-gradient(circle at top left, rgba(139, 92, 246, 0.08), transparent 28%),
-                 radial-gradient(circle at top right, rgba(34, 211, 238, 0.08), transparent 24%),
-                 linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  --bg-gradient: linear-gradient(180deg, #fcfeff 0%, #edf4fb 100%);
   --text-primary: #0f172a;
-  --text-secondary: rgba(15, 23, 42, 0.7);
-  --navbar-bg: rgba(255, 255, 255, 0.65);
-  --navbar-border: rgba(0, 0, 0, 0.06);
-  --navbar-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.08);
-  --nav-link-color: rgba(15, 23, 42, 0.8);
-  --nav-link-hover-bg: rgba(0, 0, 0, 0.05);
-  --dropdown-bg: rgba(255, 255, 255, 0.95);
-  --dropdown-border: rgba(0, 0, 0, 0.06);
-  --dropdown-text: rgba(15, 23, 42, 0.8);
-  --dropdown-button-hover: rgba(0, 0, 0, 0.05);
+  --text-secondary: rgba(30, 41, 59, 0.7);
+  --page-surface: rgba(255, 255, 255, 0.9);
+  --hero-surface: transparent;
+  --hero-border: rgba(15, 23, 42, 0.08);
+  --hero-text: var(--text-primary);
+  --hero-text-muted: var(--text-secondary);
+  --hero-accent-start: #2563eb;
+  --hero-accent-end: #14b8a6;
+  --navbar-bg: transparent;
+  --navbar-border: rgba(15, 23, 42, 0.08);
+  --navbar-shadow: 0 12px 26px -12px rgba(15, 23, 42, 0.1);
+  --nav-link-color: rgba(15, 23, 42, 0.82);
+  --nav-link-hover-bg: rgba(15, 23, 42, 0.05);
+  --dropdown-bg: rgba(255, 255, 255, 0.96);
+  --dropdown-border: rgba(15, 23, 42, 0.06);
+  --dropdown-text: rgba(15, 23, 42, 0.82);
+  --dropdown-button-hover: rgba(15, 23, 42, 0.05);
 }
 
 html,
@@ -40,6 +50,22 @@ body {
   min-height: 100%;
   background: var(--bg-gradient);
   background-attachment: fixed;
+}
+
+app-root,
+tui-root {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+app-navbar,
+app-hero,
+main.app-shell {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
